@@ -4,7 +4,7 @@ body{
 }
 /* Header - Imagen de fondo, Color de texto, padding */
 header{
-    background-image: url(/images/poker-and-casino-playing-card-background-with-royal-flush-on-black-vector.jpg);
+    background-image: url(/Holdem.github.io/images/poker-and-casino-playing-card-background-with-royal-flush-on-black-vector.jpg);
     background-size: cover; /* Hace que la imagen ocupe todo el header */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
