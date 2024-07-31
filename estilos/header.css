@@ -1,0 +1,213 @@
+/* styles.css */
+
+/* Estilos básicos para el body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para el modo claro */
+body.light-mode {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+/* Estilos para el header */
+header {
+    background-image: url('/images/poker-and-casino-playing-card-background-with-royal-flush-on-black-vector.jpg'); /* Asegúrate de poner la ruta correcta a tu imagen */
+    background-size: cover; /* Hace que la imagen ocupe todo el header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+    font-weight: 100; /* Usar el peso 100 para el estilo Extra Light */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+}
+
+header h3 {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    margin: 0;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+header a h3{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+}
+
+.social-icons {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.social-icons a {
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semi-transparente al pasar el ratón */
+}
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: start; /* Centra los elementos del nav horizontalmente */
+    margin-top: auto; /* Empuja el nav hacia abajo */
+}
+
+nav ul {
+    list-style: none; /* Quita los puntos de los li */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los li se alineen horizontalmente */
+    justify-content: center; /* Centra los elementos del nav horizontalmente */
+}
+
+nav ul li {
+    margin-right: 5rem; /* Espacio entre los items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Quita el margen derecho del último elemento */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Color de fondo al pasar el ratón */
+}
+
+/* Cuerpo de la pagina */
+
+
+/* Estilos para la sección del equipo */
+.team-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para las tarjetas */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    position: relative;
+    text-align: center;
+    padding: 16px;
+}
+
+.card-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px 0;
+}
+
+.card-info {
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.card-info p {
+    margin: 4px 0;
+}
+
+.top-left-icon, .bottom-right-icon {
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.top-left-icon {
+    top: 8px;
+    left: 8px;
+}
+
+.bottom-right-icon {
+    bottom: 8px;
+    right: 8px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    height: 150px;
+}
+
+footer i{
+    padding: 16px;
+    color: #f2f2f2;
+}
+
+footer a{
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 8px;
+}
